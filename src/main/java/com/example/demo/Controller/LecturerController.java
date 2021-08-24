@@ -1,10 +1,6 @@
 package com.example.demo.Controller;
 
-
-
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,41 +11,42 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Model.Student;
+import com.example.demo.Model.Lecturer;
+
 import com.example.demo.repo.Repo;
 
-
 @RestController
-@RequestMapping("/student")
-public class StudentController {
+@RequestMapping("/lecture")
+public class LecturerController {
 	
-	private Repo<String,Student> repo=new Repo<String,Student>();
+	
+	private Repo<Long,Lecturer> repo=new Repo<Long,Lecturer>();
 	
 	@GetMapping
-	public Collection<Student> getAll()
+	public Collection<Lecturer> getAll()
 	{
 		
 		return repo.getAll();
 	}
 	
 	@GetMapping("/{id}")
-	public Student get(@PathVariable("id") String id)
+	public Lecturer get(@PathVariable("id") long id)
 	{
 		
 		return repo.get(id);
 	}
 	@PostMapping
-	public void add(@RequestBody Student student) {
-		repo.add(student);
+	public void add(@RequestBody Lecturer data) {
+		repo.add(data);
 	}
 	
 	@DeleteMapping("/{id}")
-	public void delete(@PathVariable("id") String id)
+	public void delete(@PathVariable("id") long id)
 	{
 		repo.delete(id);
 	}
 	@PutMapping("/{id}")
-	public void update(@PathVariable("id") String id,@RequestBody Student st)
+	public void update(@PathVariable("id") long id,@RequestBody Lecturer st)
 	{
 		repo.update(id,st);
 	}
