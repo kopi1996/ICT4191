@@ -1,10 +1,10 @@
-package com.sharmi.AirportDatabase;
+package com.example.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AirportDatabaseApplicationTests {
+class SpringBootApp1ApplicationTests {
 
 	@Test
 	void contextLoads() {
