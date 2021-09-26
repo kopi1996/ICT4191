@@ -1,10 +1,10 @@
-package com.example.demo;
+package com.sharmi.DoctorPatient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Quiz2ApplicationTests {
+class DoctorPatientApplicationTests {
 
 	@Test
 	void contextLoads() {

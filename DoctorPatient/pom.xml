@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.4</version>
+		<version>2.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.vau</groupId>
-	<artifactId>Quiz-2</artifactId>
+	<groupId>lk.ac.vau</groupId>
+	<artifactId>DoctorPatient</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Quiz-2</name>
-	<description>Demo project for Spring Boot</description>
+	<name>DoctorPatient</name>
+	<description>Student Management Restfull webservice by SpringBoot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -44,18 +44,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>
-			
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-hateoas</artifactId>
-		</dependency>
-		
-		
 	</dependencies>
 
 	<build>
