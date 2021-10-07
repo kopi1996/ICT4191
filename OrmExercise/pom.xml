@@ -8,11 +8,11 @@
 		<version>2.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>lk.ac.vau</groupId>
-	<artifactId>DoctorPatient</artifactId>
+	<groupId>com.example.vau</groupId>
+	<artifactId>OrmExercise</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>DoctorPatient</name>
-	<description>Student Management Restfull webservice by SpringBoot</description>
+	<name>OrmExercise</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
